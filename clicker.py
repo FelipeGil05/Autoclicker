@@ -5,11 +5,11 @@ import config
 import gui
 from tkinter import ACTIVE, DISABLED
 
-def clicker(type_click, repetion, interval):
+def clicker():
 	while True:
 		if (config.click_flag):
-			mouse.click(type_click, repetion)
-		time.sleep(interval)
+			mouse.click(config.button_to_be_clicked, config.repetions_per_iteration)
+		time.sleep(config.interval_between_clicks)
 
 def	toogle(key):
 	if (key == toogle_key):
