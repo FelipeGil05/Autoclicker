@@ -1,4 +1,4 @@
-from config import mouse, toogle_key, keyboard
+from config import mouse, keyboard
 from pynput.keyboard import Listener
 import time
 import config
@@ -12,7 +12,7 @@ def clicker():
 		time.sleep(config.interval_between_clicks)
 
 def	toogle(key):
-	if (key == toogle_key):
+	if (key == config.toogle_key):
 		if config.click_flag == False:
 			gui.start_button.config(state=DISABLED)
 			gui.stop_button.config(state=ACTIVE)

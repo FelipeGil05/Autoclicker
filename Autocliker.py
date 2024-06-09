@@ -13,4 +13,4 @@ def main():
 try:
 	main()
 except KeyboardInterrupt:
-	print("Exiting...")
+	pass
